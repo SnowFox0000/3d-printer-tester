@@ -18,8 +18,8 @@ def search_print_size_error(data: dict):
 		diff = []
 		for i in d:
 			default = i[0]
-			min_diff = abs(round(default - min(i[1]), f))
-			max_diff = abs(round(default - max(i[1]),  f))
+			min_diff = -round(default - min(i[1]), f)
+			max_diff = -round(default - max(i[1]),  f)
 			# print(min_diff, max_diff)
 			diff.append([min_diff, max_diff])
 
